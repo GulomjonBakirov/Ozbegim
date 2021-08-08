@@ -1,7 +1,16 @@
 header {
   width: 100%;
-  background-image: url("../../images/background_img.png");
+  background-image: linear-gradient(
+      180deg,
+      rgba(31, 46, 63, 0) 70%,
+      rgba(31, 46, 63, 0.75),
+      #1f2e3f 100%,
+      transparent
+    ),
+    url("../../images/background_img.png");
   background-size: cover;
+  background-position: center;
+
   height: 100vh;
   padding: 0;
   margin-top: -10px;
@@ -35,20 +44,55 @@ header {
 }
 .navbar__link {
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .telephoneNum {
   text-decoration: none;
-  margin-bottom: 10px;
 }
 .headerTopStyle {
   margin-top: 12px;
 }
 
 .headerInner {
+  display: flex;
+  margin-top: 125px;
+  justify-content: space-between;
 }
 .headerInnerLeft {
   width: 50%;
+}
+.headerInnerTitle {
+  text-transform: uppercase;
+}
+.headerInnerText {
+  margin: 20px 0 30px 0;
+}
+.headerInnerLink {
+  color: var(--main-title-color-);
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--main-title-color-);
+}
+
+.headerInnerDivider div {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin-bottom: 40px;
+}
+.headerInnerDivider div:last-child {
+  background-color: #fff;
+}
+.headerInnerSlider {
+  margin-top: 300px;
+}
+.headerInnerSlider a {
+  text-decoration: none;
 }
 
 /* Menu-Toggler */
@@ -152,6 +196,20 @@ header {
     padding: 20px;
     background-color: var(--main-bg-color-);
   }
+
+  .headerInnerRight {
+    display: none;
+  }
+  .headerInnerLeft {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    background-color: rgba(31, 46, 63, 0.5);
+  }
 }
 
 @media (max-width: 760px) {
@@ -192,7 +250,33 @@ header {
   .telephoneNum {
     display: none;
   }
+  .headerInnerTitle {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .headerInnerText {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
+
+@media (max-width: 480px) {
+  .headerInnerLeft {
+    height: 500px;
+  }
+  .headerInnerTitle {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .headerInnerText {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+/* Keyframes */
 @keyframes site-in {
   from {
     transform: translateY(-100%);

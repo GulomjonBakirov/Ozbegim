@@ -77,3 +77,12 @@ img {
   font-size: 16px;
   line-height: 20px;
 }
+
+.headerInnerTitle {
+  font-size: 50px;
+  line-height: 75px;
+}
+
+.headerInnerText {
+  line-height: 25px;
+}
