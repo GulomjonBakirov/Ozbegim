@@ -1,0 +1,57 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+.galleryImages:nth-child(1),
+.galleryImages:nth-child(2) {
+  margin-bottom: 75px;
+}
+.galleryImages:nth-child(3) {
+  margin-top: -185px;
+}
+.more {
+  margin-top: 30px;
+  display: flex;
+  float: right;
+  align-items: center;
+  text-decoration: none;
+}
+
+.moreText {
+  margin-left: 17px;
+  text-transform: uppercase;
+}
+.iconLoading {
+  animation: loading 0.5s linear 10 forwards;
+}
+
+/*Mediq query */
+@media (max-width: 880px) {
+  .galleryImages {
+    width: 48% !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .gallery {
+    flex-direction: column;
+  }
+  .galleryImages {
+    width: 100% !important;
+    margin: 10px !important;
+  }
+}
+
+/*keyframes */
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -118,12 +118,19 @@ img {
 }
 
 @media (max-width: 780px) {
-  .title {
-    font-size: 38px;
-    line-height: 45px;
-  }
   .text {
     font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .text {
+    font-size: 12px;
     line-height: 16px;
   }
 }

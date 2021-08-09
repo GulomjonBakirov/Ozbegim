@@ -68,7 +68,8 @@
   }
 }
 @media (max-width: 600px) {
-  .featuresDescription {
+  .featuresImg {
+    width: 100%;
   }
   .features {
     flex-direction: column;
@@ -97,5 +98,18 @@
   .featuresLink {
     float: right;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .featuresItem {
+    margin-bottom: 10px;
+    width: 20%;
+  }
+  .featuresItem:last-child {
+    width: 20%;
+    text-align: center;
+  }
+  .featuresDescriptionText {
+    display: none;
   }
 }

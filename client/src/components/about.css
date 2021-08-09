@@ -146,6 +146,9 @@ article.nextSlide {
   }
 }
 @media (max-width: 500px) {
+  .slider {
+    overflow-y: scroll;
+  }
   .slideDivider {
     display: none;
   }
