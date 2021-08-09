@@ -5,11 +5,6 @@
   max-width: var(--max-width);
 }
 
-@media screen and (min-width: 992px) {
-  .section {
-    width: 95vw;
-  }
-}
 /*
 =============== 
 Slider
@@ -116,7 +111,7 @@ article.nextSlide {
 
 @media (max-width: 780px) {
   .slider {
-    overflow: visible;
+    overflow-x: hidden;
   }
   .mainContent {
     flex-direction: column;
@@ -130,7 +125,7 @@ article.nextSlide {
     width: 30px;
   }
   .buildingImg {
-    width: 500px;
+    width: 300px;
   }
   .description {
     margin-top: 10px;

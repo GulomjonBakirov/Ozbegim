@@ -21,16 +21,20 @@ const Features = () => {
               return (
                 <li className="item featuresItem">
                   <img src={image} alt={description} />
-                  <p className="text">{description}</p>
+                  <p className="text featuresDescriptionText">{description}</p>
                 </li>
               );
             })}
           </ul>
-          <a href="#loyihahaqida" className="headerInnerLink">
+          <a href="#loyihahaqida" className="headerInnerLink featuresLink">
             Loyiha haqida
           </a>
         </div>
-        <img src="/images/features.png" className="featuresImg" alt="fetures" />
+        <img
+          src="/images/features.png"
+          className="featuresImg"
+          alt="features"
+        />
       </div>
     </section>
   );

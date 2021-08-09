@@ -116,3 +116,14 @@ img {
     line-height: 20px;
   }
 }
+
+@media (max-width: 780px) {
+  .title {
+    font-size: 38px;
+    line-height: 45px;
+  }
+  .text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
