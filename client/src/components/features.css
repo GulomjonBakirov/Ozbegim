@@ -1,0 +1,28 @@
+.features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.featuresSide-left {
+  width: 50%;
+  overflow: hidden;
+}
+.featuresDescription {
+  margin-bottom: 110px;
+}
+.featuresList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.featuresItem {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+.featuresItem:nth-child(1),
+.featuresItem:nth-child(3) {
+  margin-right: 116px;
+}

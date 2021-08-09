@@ -36,7 +36,6 @@ const About = () => {
       <div className="slider">
         {building.map((building, buildingIndex) => {
           const { id, image, description } = building;
-          console.log(image);
 
           let position = "nextSlide";
           if (buildingIndex === index) {

@@ -26,3 +26,26 @@ const building = [
 ];
 
 export default building;
+
+export const featuresIcons = [
+  {
+    id: 1,
+    image: "/images/location.png",
+    description: "Joylashuv",
+  },
+  {
+    id: 2,
+    image: "/images/camera.png",
+    description: "Xavfsizlik",
+  },
+  {
+    id: 3,
+    image: "/images/award.png",
+    description: "Yuqori sifat",
+  },
+  {
+    id: 4,
+    image: "/images/view.png",
+    description: "Ajoyib ko'rinish",
+  },
+];
