@@ -1,0 +1,157 @@
+/* section */
+.section {
+  width: 90vw;
+  margin: 5rem auto;
+  max-width: var(--max-width);
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+/*
+=============== 
+Slider
+===============
+*/
+.about {
+  position: relative;
+}
+
+.slider {
+  margin-top: 4rem;
+  width: 100%;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+}
+.mainContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buildingImg {
+  width: 40%;
+}
+.description {
+  width: 40%;
+}
+.aboutTitle {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.slideDivider {
+  position: relative;
+  width: 50%;
+  float: right;
+  height: 100%;
+}
+.prev,
+.next {
+  position: absolute;
+  transform: translateY(-50%);
+  background: transparent;
+  font-size: 1.5rem;
+
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s linear;
+  opacity: 0.7;
+}
+.prev:hover,
+.next:hover {
+  opacity: 1;
+}
+.prev {
+  bottom: 0;
+  left: 0;
+}
+.nextIndicator {
+  display: flex;
+  align-items: center;
+}
+.indicator {
+  color: var(--main-title-color-);
+  margin-right: 5px;
+}
+.next {
+  top: 10px;
+  right: 0;
+}
+article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+article.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+article.lastSlide {
+  transform: translateX(-100%);
+}
+article.nextSlide {
+  transform: translateX(100%);
+}
+/*                            Media query for about                     */
+@media (max-width: 1000px) {
+  .description {
+    max-width: 45em;
+  }
+  .indicator {
+    font-size: 1rem;
+  }
+  .prev {
+    bottom: 10%;
+  }
+  .next {
+    top: 10%;
+  }
+}
+
+@media (max-width: 780px) {
+  .slider {
+    overflow: visible;
+  }
+  .mainContent {
+    flex-direction: column;
+  }
+  .prev,
+  .next {
+    z-index: 1;
+  }
+  .prevImg,
+  .nextImg {
+    width: 30px;
+  }
+  .buildingImg {
+    width: 500px;
+  }
+  .description {
+    margin-top: 10px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .slideDivider {
+    width: 100%;
+  }
+  .prev {
+    top: 50%;
+    left: 0;
+  }
+  .next {
+    top: 50%;
+    right: 0;
+  }
+}
+@media (max-width: 500px) {
+  .slideDivider {
+    display: none;
+  }
+}

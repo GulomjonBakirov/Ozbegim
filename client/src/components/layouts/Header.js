@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./header.css";
 
 const Header = () => {
-  const [click, setClick] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   const openToggle = () => {
@@ -104,7 +103,7 @@ const Header = () => {
             Biz asosiy e'tiborimizni aynan sifatga va narxlarga qaratamiz,
             sizning didingizga mos tushuvchi uylarni bizdan topishingiz mumkun
           </p>
-          <a href="/loyihahaqida" className="headerInnerLink">
+          <a href="#loyihahaqida" className="headerInnerLink">
             Loyiha haqida
           </a>
         </div>

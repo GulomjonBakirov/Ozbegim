@@ -1,18 +1,15 @@
-import Header from "./components/layouts/Header"
-import Main from "./components/Main"
-
-
+import Header from "./components/layouts/Header";
+import About from "./components/About";
 
 function App() {
-  return(
+  return (
     <>
-        <Header />
-        <div className="container">
-          <Main />
+      <Header />
+      <div className="container">
+        <About />
       </div>
     </>
-        
-  )
+  );
 }
 
 export default App;

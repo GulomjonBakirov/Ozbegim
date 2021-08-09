@@ -49,7 +49,7 @@ body {
 }
 *:focus {
   outline: 0;
-  box-shadow: 0 0 0 4px rgba(41, 80, 147, 0.4);
+  box-shadow: 0 0 0 4px rgba(41, 80, 147, 0);
 }
 img {
   max-width: 100%;
@@ -72,6 +72,11 @@ img {
   padding: 0 133px;
   margin: 0 auto;
 }
+
+/* Content */
+.content {
+  margin-top: 125px;
+}
 /* Header */
 .headerTopText {
   font-size: 16px;
@@ -85,4 +90,27 @@ img {
 
 .headerInnerText {
   line-height: 25px;
+}
+
+/* Media query for global styles */
+@media (max-width: 1000px) {
+  .title {
+    font-size: 38px;
+    line-height: 45px;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .title {
+    font-size: 38px;
+    line-height: 45px;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
