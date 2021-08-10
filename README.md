@@ -40,3 +40,6 @@ or
 ```
 npm start
 ```
+
+## Demo Version
+[O'zbegim](https://ozbegim.netlify.app/)
