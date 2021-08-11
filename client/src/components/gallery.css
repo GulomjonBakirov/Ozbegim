@@ -25,7 +25,7 @@
   text-transform: uppercase;
 }
 .iconLoading {
-  animation: loading 0.5s linear 10 forwards;
+  animation: loading 0.5s linear infinite forwards;
 }
 
 /*Mediq query */

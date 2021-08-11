@@ -144,6 +144,14 @@ article.nextSlide {
     top: 50%;
     right: 0;
   }
+  .blogPrev {
+    top: 85%;
+    left: 0;
+  }
+  .blogNext {
+    top: 0%;
+    right: 0;
+  }
 }
 @media (max-width: 500px) {
   .slider {

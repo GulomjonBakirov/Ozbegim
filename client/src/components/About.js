@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import data from "../data.js";
+import { buildings } from "../data.js";
 import "./about.css";
 
 const About = () => {
-  const [building, setBuilding] = useState(data);
+  const [building, setBuilding] = useState(buildings);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {

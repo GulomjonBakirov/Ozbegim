@@ -1,0 +1,59 @@
+.blogSlider {
+  margin-top: 4rem;
+  width: 100%;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.blogContent {
+  width: 23%;
+}
+.blogTitle::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.blogTitle {
+  font-size: 11.75px;
+  line-height: 14px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.blogDescription {
+  font-size: 9.75px;
+  line-height: 14px;
+  margin: 0 !important;
+}
+.date {
+  font-size: 9.75px;
+  line-height: 14px;
+  margin-top: 5px;
+}
+.slick-track {
+  display: flex;
+}
+.slick-slide {
+  margin-right: 10px;
+}
+.blogPrev {
+  bottom: 0;
+  left: 0;
+}
+.slick-arrow {
+  display: none !important;
+}
+.blogNext {
+  top: 50px;
+}
+
+@media (max-width: 680px) {
+  .blogPrev {
+    top: 90%;
+    left: 0;
+  }
+}
