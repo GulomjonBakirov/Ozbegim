@@ -4,6 +4,7 @@ import Features from "./components/Features";
 import Gallery from "./components/Gallery";
 import Blog from "./components/Blog";
 import Contact from "./components/Contact";
+import Footer from "./components/layouts/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Gallery />
         <Blog />
         <Contact />
+        <Footer />
       </div>
     </div>
   );

@@ -1,0 +1,26 @@
+.footer {
+  margin: 30px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footerText {
+  font-size: 13.75px;
+  line-height: 17px;
+}
+/* Media query for footer */
+
+@media (max-width: 750px) {
+  .footerText:first-child {
+    display: none;
+  }
+}
+
+@media (max-width: 460px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footerText {
+    margin-bottom: 5px;
+  }
+}
