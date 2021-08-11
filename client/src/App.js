@@ -3,19 +3,20 @@ import About from "./components/About";
 import Features from "./components/Features";
 import Gallery from "./components/Gallery";
 import Blog from "./components/Blog";
-import { BrowserRouter as Router } from "react-router-dom";
+import Contact from "./components/Contact";
 
 function App() {
   return (
-    <Router>
+    <div>
       <Header />
       <div className="container">
         <About />
         <Features />
         <Gallery />
         <Blog />
+        <Contact />
       </div>
-    </Router>
+    </div>
   );
 }
 

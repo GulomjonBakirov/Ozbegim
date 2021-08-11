@@ -3,7 +3,6 @@ import { blogsData } from "../data.js";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "./blog.css";
-import { Link } from "react-router-dom";
 
 export default class Blog extends Component {
   constructor(props) {
@@ -70,9 +69,9 @@ export default class Blog extends Component {
                   <img src={image} className="blogImg" alt={image} />
                 </div>
                 <div className="details">
-                  <Link to={`/blog/`} className="title blogTitle">
+                  <a href="#blog" className="title blogTitle">
                     {title}
-                  </Link>
+                  </a>
                   <p className="text blogDescription">{description}</p>
                   <p className="text date">{date}</p>
                 </div>
